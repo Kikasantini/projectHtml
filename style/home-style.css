@@ -1,0 +1,131 @@
+body {
+    background-color: #FFD484;
+}
+
+table {
+    padding-top: 50px;
+    border-spacing: 0px;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+td {
+    width: fit-content;
+    text-align: center;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    z-index: 10;
+  }
+
+button:hover .overlay {
+    opacity: .5;
+}
+
+button:hover .text {
+    opacity: 1;
+}
+
+.style0button {
+    border: 3px solid white;
+}
+
+.style1button {
+    border: 3px solid black;
+}
+
+.style2button {
+    border: 5px double black;
+}
+
+.style3button {
+    border: 6px groove rgb(201, 95, 8);
+}
+
+.style4button {
+    border: 3px solid rgb(105, 0, 153);
+}
+
+.style5button {
+    border: none;
+}
+
+h1 {
+    padding-top: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 120px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 50px;
+    margin: auto;
+}
+
+p {
+    font-style: italic;
+    color: gray;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Medium screen */
+@media screen and (max-width: 800px) {
+    table { padding-top: 30px;}
+    h1 { font-size: 80px;}
+    h2 { font-size: 35px;}
+}
+
+
+/* Small screen */
+@media screen and (max-width: 500px) {
+    table { padding-top: 20px;}
+    h1 { font-size: 60px;}
+    h2 { font-size: 25px;}
+}

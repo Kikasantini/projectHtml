@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../style/form-style.css">
+    <link rel="stylesheet" type="text/css" href="../style/navbar-style.css">
+    <script type="text/javascript" src="../scripts/index-script.js"></script>
+    <script type="text/javascript" src="../scripts/madlibs.js"></script>
+
+    <title>Mad Libs</title>
+    <link rel="icon" type="image/x-icon" href="../images/icons/game2.ico">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="../index.html">Home</a>
+        <a href="resume.html">Mon Resume</a>
+        <a href="jeu1calculatrice.html">Jeu La Calculatrice</a>
+        <a href="" class="active">Jeu Mad Libs</a>
+        <a href="gallery.html">Gallerie</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+
+      <table>
+        <tr>
+            <td>Completez le formulaire pour créer l'histoire!</td>
+        </tr>
+    </table>
+    <br>
+
+      <mainFrame>
+        
+      
+
+
+    <form>
+      <label>Un aliment:</label><br><input type="text" id="answer1" required><br>
+      <label>Une couleur:</label><br><input type="text" id="answer2" required><br>
+      <label>Un animal grand:</label><br><input type="text" id="answer3" required><br>
+      <label>Un animal petit:</label><br><input type="text" id="answer4" required><br>
+      <label>Un sujet polémique:</label><br><input type="text" id="answer5" required><br>
+      <label>Une partie du corps humain:</label><br><input type="text" id="answer6" required><br>
+      <label>Un verbe:</label><br><input type="text" id="answer7" required><br>
+      <label>Completez: L'eau potable est..</label><br><input type="text" id="answer8" required><br>
+      <label>Completez avec une activité: Je n'aime pas trop..</label><br><input type="text" id="answer9" required><br>
+      <br>
+      <input type="button" value="Submit" onclick="getAnswers()">
+      <input type="button" value="Reset" onclick="clearAll()">
+
+      
+    </form>
+
+      
+      
+
+      
+ 
+          <img src="../images/crow.jpg">
+          <div class="storyFrame">
+                    <div id="finalstory"></div>
+            </div>
+   
+
+
+      
+
+    </mainFrame>
+      <br><br>
+
+</body>
+</html>

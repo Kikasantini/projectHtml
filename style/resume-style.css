@@ -105,8 +105,9 @@ blue {
     }
 }
 
+
 /* Phone screen */
-  @media (max-aspect-ratio: 20/9)  {
+@media (aspect-ratio: 20/9)  {
     .gridmenu {width: 100%;}
     .menuitem {
         margin: 1.0121457489878542510121457489879%;

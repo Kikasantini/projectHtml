@@ -72,7 +72,7 @@ activateCaps {
 }
 
 /* Phone screen */
-@media (max-aspect-ratio: 20/9) {
+@media (aspect-ratio: 20/9) {
 
     mainFrame {
         display: grid;

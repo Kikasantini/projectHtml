@@ -68,7 +68,7 @@ body {
   }
 
   /* PHONE SCREEN */
-  @media (max-aspect-ratio: 20/9) {
+  @media (aspect-ratio: 20/9) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;

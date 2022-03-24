@@ -123,8 +123,17 @@ li {
 }
 
 
+
+
 /* Small screen */
 @media screen and (max-width: 500px) {
+    table { padding-top: 20px;}
+    h1 { font-size: 60px;}
+    h2 { font-size: 25px;}
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
     table { padding-top: 20px;}
     h1 { font-size: 60px;}
     h2 { font-size: 25px;}

@@ -68,7 +68,7 @@ body {
   }
 
   /* TEST PHONE SCREEN */
-  @media only screen and (max-aspect-ratio: 20/9) {
+  @media (max-aspect-ratio: 20/9) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;
@@ -82,5 +82,26 @@ body {
     }
    
   }
+
+  /* Minimum aspect ratio */
+@media (min-aspect-ratio: 8/5) {
+  body {
+    background: #9af; /* blue */
+  }
+}
+
+/* Maximum aspect ratio */
+@media (max-aspect-ratio: 3/2) {
+  body {
+    background: #9ff;  /* cyan */
+  }
+}
+
+/* Exact aspect ratio, put it at the bottom to avoid override*/
+@media (aspect-ratio: 20/9) {
+  body {
+    background: #f9a; /* red */
+  }
+}
 
   

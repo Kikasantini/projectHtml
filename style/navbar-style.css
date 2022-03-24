@@ -68,7 +68,7 @@ body {
   }
 
   /* TEST PHONE SCREEN */
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 480px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;

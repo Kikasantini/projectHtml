@@ -68,7 +68,7 @@ body {
   }
 
   /* TEST PHONE SCREEN */
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-aspect-ratio: 16/9) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;
@@ -82,3 +82,5 @@ body {
     }
    
   }
+
+  

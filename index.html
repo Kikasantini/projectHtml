@@ -28,21 +28,21 @@
                 <ul type="none">
                     <li>
                         <div class="container">
-                            <button id="b1" class="style0button" onclick="javascript:changeLanguage();"><div class="text">Langage</div><img src="images/lang.jpg">
+                            <button id="b1" class="bigButton style0button" onclick="javascript:changeLanguage();"><div class="text">Langage</div><img src="images/lang.jpg">
                                 <div class="overlay"></div>
                             </button>
                         </div>
                     </li>
                     <li>
                         <div class="container">
-                            <button id="b2" class="style0button" onclick="javascript:changeBgColor();"><div class="text">Couleur</div><img src="images/color.jpg">
+                            <button id="b2" class="bigButton style0button" onclick="javascript:changeBgColor();"><div class="text">Couleur</div><img src="images/color.jpg">
                                 <div class="overlay"></div>
                             </button>
                         </div>
                     </li>
                     <li>
                         <div class="container">
-                            <button id="b3" class="style0button" onclick="javascript:changeStyle();"><div class="text">Style</div><img src="images/style.jpg">
+                            <button id="b3" class="bigButton style0button" onclick="javascript:changeStyle();"><div class="text">Style</div><img src="images/style.jpg">
                                 <div class="overlay"></div>
                             </button>
                         </div>
@@ -55,10 +55,12 @@
       <table>
           <tr>
               <td>
-                    <a onclick="javascript:changeFontStyle();"><h1 id="text1">Bienvenue</h1></a>
-                    <h2 id="text2">Projet 2 - Programmation Web</h2>
+                    <a onclick="javascript:changeText1Color();"><h1 id="text1">Bienvenue</h1></a>
+                    <a onclick="javascript:changeText2Decoration();"><h2 id="text2">Projet 2 - Programmation Web</h2></a>
                     <a onclick="javascript:changeTextColor();"><p id="text3">Développé par Erica Santini de Lima</p>
                     <p id="text4">23 mars 2022</p></a>
+                    <br>
+                    <button class="smallButton" onclick="javascript:text34Left();">&#8249;</button>  <button class="smallButton" onclick="javascript:text34Right();">&#8250;</button>
               </td>
           </tr>
       </table>

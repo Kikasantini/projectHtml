@@ -11,13 +11,17 @@ const MAX = newText1.length;
 
 var style = 0;
 
-var bgColor = 0;
-var colors = ["#E4D8C2", "#BBFF84", "#84FFF1", "#FFBDE9", "#E2A9A9", "#BABABA", "#88C5B7", "#ffffff", "#4C4C4C", "#FCF95D"];
+var text3and4Background = -1;
+var textBackgrounds = ["#000000", "#C22828", "#ffffff", "#FFF529", "#FD50FF", "#8CECEB"];
 
-var fontFamily = 0;
-var fonts = ["'Segoe UI'", "'Courier New'"];
+var bgColor = 0;
+var colors = ["#E4D8C2", "#B4DE92", "#9AEEE5", "#F5C0E3", "#E2A9A9", "#BABABA", "#88C5B7", "#ffffff", "#F5F27C", "#4C4C4C"];
+
+var text1Color = 0;
+var text1Colors = ["#000000", "#7F0000", "#0D6B32", "#48345F", "#DEDEDE", "#744D00"];
 
 var isDark = true;
+var decorated = false;
 
 function changeLanguage(){
   lang += 1;
@@ -45,6 +49,12 @@ function changeBgColor(){
   }
 
   document.body.style.backgroundColor = colors[bgColor];
+
+  if(text3and4Background == textBackgrounds.length){
+    document.getElementById("text3").style.backgroundColor = colors[bgColor];
+    document.getElementById("text4").style.backgroundColor = colors[bgColor];
+  }
+
   return;
 }
 
@@ -54,7 +64,7 @@ function changeStyle(){
     style = 0;
   }
   
-  var newStyleName = "style" + style + "button";
+  var newStyleName = "bigButton style" + style + "button";
 
   document.getElementById("b1").className = newStyleName;
   document.getElementById("b2").className = newStyleName;
@@ -63,12 +73,14 @@ function changeStyle(){
   return;
 }
 
-function changeFontStyle(){
-  fontFamily += 1;
-  if(fontFamily == fonts.length){
-    fontFamily = 0;
+function changeText1Color(){
+  text1Color += 1;
+
+  if(text1Color == text1Colors.length){
+    text1Color = 0;
   }
-  document.getElementById("text1").style.fontFamily = fonts[fontFamily];
+
+  document.getElementById("text1").style.color = text1Colors[text1Color];
   return;
 }
 
@@ -83,4 +95,52 @@ function changeTextColor(){
   }
   isDark = !isDark;
   return;
+}
+
+function changeText2Decoration(){
+  decorated = !decorated;
+
+  if(decorated){
+    document.getElementById("text2").style.textDecoration = "line-through";
+  }
+  else{
+    document.getElementById("text2").style.textDecoration = "none";
+  }
+  return;
+}
+
+function text34Right(){
+  text3and4Background += 1;
+
+  if(text3and4Background > textBackgrounds.length){
+    text3and4Background = 0;
+  }
+
+  nowChange(text3and4Background);
+  return;
+}
+
+function text34Left(){
+  text3and4Background -= 1;
+
+  if(text3and4Background == -2){
+    text3and4Background = textBackgrounds.length - 1;
+  }
+  else if(text3and4Background == -1){
+    text3and4Background = textBackgrounds.length;
+  }
+
+  nowChange(text3and4Background);
+  return;
+}
+
+function nowChange(color){
+  if(color == textBackgrounds.length){
+    document.getElementById("text3").style.backgroundColor = colors[bgColor];
+    document.getElementById("text4").style.backgroundColor = colors[bgColor];
+  }
+  else{
+    document.getElementById("text3").style.backgroundColor = textBackgrounds[color];
+    document.getElementById("text4").style.backgroundColor = textBackgrounds[color];
+  }
 }

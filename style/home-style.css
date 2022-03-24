@@ -20,7 +20,7 @@ td {
     padding: 0px;
 }
 
-button {
+.bigButton {
     margin: 0;
     padding: 0;
     width: 100px;
@@ -46,6 +46,12 @@ button {
     background-color: #000000;
 }
 
+p{
+    background-color: none;
+    width: fit-content;
+    margin: auto;
+}
+
 .text {
     color: white;
     font-size: 20px;
@@ -58,11 +64,11 @@ button {
     z-index: 10;
   }
 
-button:hover .overlay {
+.bigButton:hover .overlay {
     opacity: .5;
 }
 
-button:hover .text {
+.bigButton:hover .text {
     opacity: 1;
 }
 
@@ -98,8 +104,9 @@ h1 {
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 45px;
     margin: auto;
+    padding-bottom: 20px;
 }
 
 p {
@@ -117,6 +124,32 @@ li {
     padding-right: 5px;
 }
 
+.arrow {
+    border: solid rgb(221, 73, 73);
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 5px;
+    top: 50%;
+    left: 50%;
+    margin-top: 3px;
+}
+
+.smallButton {
+    width: 30px;
+    height: 30px;
+    background-color: #d3d3d3;
+    border: solid grey;
+    border-width: 0 2px 2px 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.smallButton:active {
+
+    background-color: #9c9c9c;
+    
+}
 
 /* Medium screen */
 @media screen and (max-width: 800px) {

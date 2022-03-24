@@ -133,8 +133,7 @@ li {
 }
 
 /* Mobile */
-/* Not working !!!! */
-@media only screen and (max-width: 768px) {
+@media (max-aspect-ratio: 20/9) {
     table { padding-top: 20px;}
     h1 { font-size: 60px;}
     h2 { font-size: 25px;}

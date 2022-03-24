@@ -104,3 +104,20 @@ blue {
         float: left;
     }
 }
+
+/* Phone screen */
+  @media (max-aspect-ratio: 20/9)  {
+    .gridmenu {width: 100%;}
+    .menuitem {
+        margin: 1.0121457489878542510121457489879%;
+        padding: 1.0121457489878542510121457489879%;
+    }
+    .gridmain {width: 100%;}
+    .main {padding: 1.0121457489878542510121457489879%;}
+    .gridright {width: 100%;}
+    .right {padding: 1.0121457489878542510121457489879%;}
+    .gridbox {
+        margin-right: 0;
+        float: left;
+    }
+}

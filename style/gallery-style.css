@@ -34,4 +34,12 @@
     }
   }
 
+
+  /* Phone screen */
+@media (max-aspect-ratio: 20/9) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
  

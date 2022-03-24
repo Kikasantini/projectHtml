@@ -48,7 +48,31 @@ activateCaps {
 
 
 /* Styles pour petit écran */
-@media screen and (max-width: 800px) { /* 400px */
+@media screen and (max-width: 800px) {
+
+    mainFrame {
+        display: grid;
+    }
+
+    img {
+        display: none;
+    }
+
+    .storyFrame {
+        padding: 0;
+        margin: 10px;
+        width: fit-content;
+        font-size: 18px;
+    }
+
+    table {
+        font-size: 20px;
+        height: 60px;
+    }
+}
+
+/* Phone screen */
+@media (max-aspect-ratio: 20/9) {
 
     mainFrame {
         display: grid;

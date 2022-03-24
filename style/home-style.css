@@ -1,9 +1,9 @@
 body {
-    background-color: #FFD484;
+    background-color: #e4d8c2;
 }
 
 table {
-    padding-top: 50px;
+    padding-top: 30px;
     border-spacing: 0px;
     margin: auto;
 }
@@ -17,6 +17,7 @@ img {
 td {
     width: fit-content;
     text-align: center;
+    padding: 0px;
 }
 
 button {
@@ -90,8 +91,8 @@ button:hover .text {
 }
 
 h1 {
-    padding-top: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-family: 'Segoe UI';*/
+    font-family: 'Segoe UI';
     font-size: 120px;
     margin: auto;
 }
@@ -103,10 +104,11 @@ h2 {
 
 p {
     font-style: italic;
-    color: gray;
+    color: #727272;
 }
 
 ul {
+    padding: 0;
     display: flex;
 }
 
@@ -114,6 +116,7 @@ li {
     padding-left: 5px;
     padding-right: 5px;
 }
+
 
 /* Medium screen */
 @media screen and (max-width: 800px) {

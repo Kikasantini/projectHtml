@@ -1,8 +1,11 @@
 body {
   margin: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Segoe UI';
 }
 
+a {
+  text-decoration: none;
+}
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
@@ -16,7 +19,7 @@ body {
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    
     font-size: 17px;
   }
   
@@ -24,6 +27,7 @@ body {
   .active {
     background-color: #db5b6e;
     color: white;
+    text-decoration:line-through greenyellow;
   }
   
   /* Hide the link that should open and close the topnav on small screens */

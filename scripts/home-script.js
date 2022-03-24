@@ -12,10 +12,12 @@ const MAX = newText1.length;
 var style = 0;
 
 var bgColor = 0;
-var colors = ["#FFD484", "#BBFF84", "#84FFF1", "#FF84EE", "#FF8484", "#969696", "#820000", "#88C5B7", "#ffffff", "#4C4C4C", "#FFFB00"];
+var colors = ["#E4D8C2", "#BBFF84", "#84FFF1", "#FFBDE9", "#E2A9A9", "#BABABA", "#88C5B7", "#ffffff", "#4C4C4C", "#FCF95D"];
 
+var fontFamily = 0;
+var fonts = ["'Segoe UI'", "'Courier New'"];
 
-
+var isDark = true;
 
 function changeLanguage(){
   lang += 1;
@@ -58,5 +60,27 @@ function changeStyle(){
   document.getElementById("b2").className = newStyleName;
   document.getElementById("b3").className = newStyleName;
 
+  return;
+}
+
+function changeFontStyle(){
+  fontFamily += 1;
+  if(fontFamily == fonts.length){
+    fontFamily = 0;
+  }
+  document.getElementById("text1").style.fontFamily = fonts[fontFamily];
+  return;
+}
+
+function changeTextColor(){
+  if(isDark){
+    document.getElementById("text3").style.color = "#ffffff";
+    document.getElementById("text4").style.color = "#ffffff";
+  }
+  else{
+    document.getElementById("text3").style.color = "#727272";
+    document.getElementById("text4").style.color = "#727272";
+  }
+  isDark = !isDark;
   return;
 }

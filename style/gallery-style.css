@@ -17,29 +17,30 @@
     vertical-align: middle;
     width: 100%;
   }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 45%;
-      max-width: 45%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 500px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
 
 
-  /* Phone screen */
+    /* My phone screen */
 @media (aspect-ratio: 20/9) {
   .column {
     flex: 100%;
     max-width: 100%;
   }
 }
+
+/* Small screen */
+@media screen and (max-width: 500px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Medium screen */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 45%;
+      max-width: 45%;
+    }
+  }
+  
  

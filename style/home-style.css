@@ -97,7 +97,6 @@ p{
 }
 
 h1 {
-    /*font-family: 'Segoe UI';*/
     font-family: 'Segoe UI';
     font-size: 120px;
     margin: auto;
@@ -151,6 +150,9 @@ li {
     
 }
 
+/* DEFAULT : Desktop screen */
+
+
 /* Medium screen */
 @media screen and (max-width: 800px) {
     table { padding-top: 30px;}
@@ -159,18 +161,29 @@ li {
 }
 
 
-
-
-/* Small screen */
-@media screen and (max-width: 500px) {
+/* My phone screen  AND small screen */
+@media screen and (aspect-ratio: 20/9) and (max-width: 500px) {
     table { padding-top: 20px;}
     h1 { font-size: 60px;}
     h2 { font-size: 25px;}
 }
 
-/* Mobile */
+
+
+
+/* My phone screen
 @media (aspect-ratio: 20/9) {
     table { padding-top: 20px;}
     h1 { font-size: 60px;}
     h2 { font-size: 25px;}
 }
+
+/* Small screen
+@media screen and (max-width: 500px) {
+    table { padding-top: 20px;}
+    h1 { font-size: 60px;}
+    h2 { font-size: 25px;}
+}
+ */
+
+

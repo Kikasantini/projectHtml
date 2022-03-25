@@ -46,8 +46,34 @@ activateCaps {
     text-transform: uppercase;
 }
 
+/* My phone screen */
+@media (aspect-ratio: 20/9) {
 
-/* Styles pour petit écran */
+    mainFrame {
+        display: grid;
+    }
+
+    img {
+        display: none;
+    }
+
+    .storyFrame {
+        padding: 0;
+        margin: 10px;
+        width: fit-content;
+        font-size: 18px;
+    }
+
+    table {
+        font-size: 20px;
+        height: 60px;
+    }
+}
+
+/* Small screen */
+
+
+/* Medium screen */
 @media screen and (max-width: 800px) {
 
     mainFrame {
@@ -71,26 +97,3 @@ activateCaps {
     }
 }
 
-/* Phone screen */
-@media (aspect-ratio: 20/9) {
-
-    mainFrame {
-        display: grid;
-    }
-
-    img {
-        display: none;
-    }
-
-    .storyFrame {
-        padding: 0;
-        margin: 10px;
-        width: fit-content;
-        font-size: 18px;
-    }
-
-    table {
-        font-size: 20px;
-        height: 60px;
-    }
-}

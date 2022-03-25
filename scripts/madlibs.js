@@ -19,9 +19,9 @@ function getAnswers(){
     }
 
     story = "Un corbeau était assis sur un arbre de <tag>" + answer1 +"</tag>, ne faisant rien du tout. <br>Un petit <tag>" + answer3 + "</tag> <tag>" + answer2 +
-    "</tag> a vu le corbeau et a demandé: Puis-je aussi rester assis et <tag>" + answer7 + "</tag> toute la journée? <br>Le corbeau a répondu: " +
-    "Bien sûr, pourquoi pas? <br>Alors le <tag>" + answer3 + "</tag> s'est assis dans le sol sous le corbeau et s'est reposé. " +
-    "<br>Tout à coup, un <tag>" + answer4 + "</tag> est apparu en hurlant: <activateCaps><tag>" + answer5 + "</tag> est <tag>" + answer8 + "</activateCaps></tag>!!!! <br>Il a sauté sur le <tag>" +
+    "</tag> a vu le corbeau et a demandé: <speech>Puis-je aussi rester assis et <tag>" + answer7 + "</tag> toute la journée?</speech> <br>Le corbeau a répondu: " +
+    "<speech>Bien sûr, pourquoi pas? </speech><br>Alors le <tag>" + answer3 + "</tag> s'est assis dans le sol sous le corbeau et s'est reposé. " +
+    "<br>Tout à coup, un <tag>" + answer4 + "</tag> est apparu en hurlant: <speech><activateCaps><tag>" + answer5 + "</tag> est <tag>" + answer8 + "</activateCaps></tag>!!!! </speech><br>Il a sauté sur le <tag>" +
     answer3 + "</tag> et l'a mangé, ne laissant que les <tag>" + answer6 + "</tag> derrière. <br><br><b>Morale de l'histoire</b> :<br>Il n'y a pas de morale, " +
     "mais c'est important de toujours <tag>" + answer9 + "</tag>.";
 

@@ -1,19 +1,7 @@
-body {
-    margin: 0;
-}
+/* DEFAULT settings : Big screen (Desktop) */
 
-img {
-    border-left: 5px solid white;
-    border-right: 5px solid white;
-}
-
-h1 {
-    font-size: 1.625em;
-}
-
-h2 {
-    font-size: 1.375em;
-}
+h1 { font-size: 1.625em;}
+h2 { font-size: 1.375em;}
 
 .header {
     padding: 1.0121457489878542510121457489879%;
@@ -30,111 +18,65 @@ h2 {
     cursor: pointer;
 }
 
-.main {
-    padding: 2.0661157024793388429752066115702%;
-}
-
-.right {
-    padding: 4.310344827586206896551724137931%;
-    background-color: #cac1ae;
-    border-right: 5px solid white;
-}
+.right { padding: 4%; background-color: #cac1ae;}
 
 .footer {
-    padding: 1.0121457489878542510121457489879%;
+    padding: 1%;
     text-align: center;
     background-color: #f1f1f1;
     border: 1px solid #e9e9e9;
     font-size: 14px;
 }
 
-.gridcontainer {
-    width: 100%;
-}
-
-.gridwrapper {
-    overflow: hidden;
-}
+.gridcontainer {width: 100%;}
+.gridwrapper { overflow: hidden;}
 
 .gridbox {
-    margin-bottom: 2.0242914979757085020242914979757%;
-    margin-right: 2.0242914979757085020242914979757%;
+    margin-bottom: 2%;
+    margin-right: 1%;
     float: left;
 }
 
-.gridheader {
-    width: 100%;
+.gridheader { width: 100%;}
+.gridmenu { width: 22%; margin-left: 1%;}
+.gridmain { width: 50%;}
+.gridright { width: 22%; margin-right: 1%;}
+.gridfooter { width: 100%; margin-bottom: 0;}
+
+blue { color: rgb(153, 0, 173); font-weight: bold;}
+
+/* My phone screen OR small screen */
+@media (aspect-ratio: 20/9), (max-width: 500px) {
+    
+    .gridbox { margin-right: 0; float: left;}
+
+    .gridmenu {width: 98%;}
+    .gridmain {width: 100%;}
+    .gridright {width: 100%;}
+
+    .main {padding: 1%;}
+    .right {padding: 1%; margin-left: 1%; margin-right: 1%;}
+    
+    h1 { font-size: 1.325em;}
+    ul { padding-left: 10%;}
+    h2 { margin-left: 10px;}
+    .noPadding { padding-left: 0%; list-style-type: none;}
 }
-
-.gridmenu {
-    width: 23.481781376518218623481781376518%;
-}
-
-.gridmain {
-    width: 48.987854251012145748987854251012%;
-}
-
-.gridright {
-    width: 23.481781376518218623481781376518%;
-    margin-right: 0;
-}
-
-.gridfooter {
-    width: 100%;
-    margin-bottom: 0;
-}
-
-blue {
-    color: rgb(153, 0, 173);
-    font-weight: bold;
-}
-
-
 
 /* Medium screen */
-@media screen and (max-width: 800px) {
-    body {
-        background-color: greenyellow;
-    }
-}
+@media (min-width: 501px) and (max-width: 900px) {
 
-/* My phone screen AND small screen */
-@media (aspect-ratio: 20/9) and (max-width: 500px) {
-    .gridmenu {width: 100%;}
-    .menuitem {
-        margin: 1.0121457489878542510121457489879%;
-        padding: 1.0121457489878542510121457489879%;
-    }
-    .gridmain {width: 100%;}
-    .main {padding: 1.0121457489878542510121457489879%;}
+    .gridbox { margin-right: 0; float: left;} /* contains: grid_MENU, grid_MAIN, grid_RIGHT, header and footer */
+
+    .gridmenu {width: 30%;}
+    .gridmain {width: 68%; margin-top: 0;}
     .gridright {width: 100%;}
-    .right {padding: 1.0121457489878542510121457489879%;}
-    .gridbox {
-        margin-right: 0;
-        float: left;
-    }
+
+    .main {padding: 1%;}
+    .right {padding: 1%; margin-left: 1%; margin-right: 1%; columns: 2;}
+    
     h1 { font-size: 1.325em;}
+    ul { padding-left: 10%;}
+    h2 { margin-left: 10px;}
+    .noPadding { padding-left: 0%; list-style-type: none;}
 }
-
-
-/* Small screen 
-@media only screen and (max-width: 500px) {
-    .gridmenu {width: 100%;}
-    .menuitem {
-        margin: 1.0121457489878542510121457489879%;
-        padding: 1.0121457489878542510121457489879%;
-    }
-    .gridmain {width: 100%;}
-    .main {padding: 1.0121457489878542510121457489879%;}
-    .gridright {width: 100%;}
-    .right {padding: 1.0121457489878542510121457489879%;}
-    .gridbox {
-        margin-right: 0;
-        float: left;
-    }
-    h1 { font-size: 1.325em;}
-}
-*/
-
-
-

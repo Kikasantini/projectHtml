@@ -15,7 +15,7 @@ var text3and4Background = -1;
 var textBackgrounds = ["#000000", "#C22828", "#ffffff", "#FFF529", "#FD50FF", "#8CECEB"];
 
 var bgColor = 0;
-var colors = ["#E4D8C2", "#B4DE92", "#9AEEE5", "#F5C0E3", "#E2A9A9", "#BABABA", "#88C5B7", "#ffffff", "#F5F27C", "#4C4C4C"];
+var colors = ["#E4D8C2", "#ADCD93", "#98E0D8", "#E7BAD7", "#E2A9A9", "#BABABA", "#88C5B7", "#ffffff", "#EBE884", "#4C4C4C"];
 
 var text1Color = 0;
 var text1Colors = ["#000000", "#7F0000", "#0D6B32", "#48345F", "#DEDEDE", "#744D00"];
@@ -43,18 +43,15 @@ function changeLanguage(){
 
 function changeBgColor(){
   bgColor += 1;
-
   if(bgColor == colors.length){
     bgColor = 0;
   }
-
   document.body.style.backgroundColor = colors[bgColor];
 
   if(text3and4Background == textBackgrounds.length){
     document.getElementById("text3").style.backgroundColor = colors[bgColor];
     document.getElementById("text4").style.backgroundColor = colors[bgColor];
   }
-
   return;
 }
 
@@ -63,7 +60,6 @@ function changeStyle(){
   if(style > 5){
     style = 0;
   }
-  
   var newStyleName = "bigButton style" + style + "button";
 
   document.getElementById("b1").className = newStyleName;
@@ -75,7 +71,6 @@ function changeStyle(){
 
 function changeText1Color(){
   text1Color += 1;
-
   if(text1Color == text1Colors.length){
     text1Color = 0;
   }
@@ -99,7 +94,6 @@ function changeTextColor(){
 
 function changeText2Decoration(){
   decorated = !decorated;
-
   if(decorated){
     document.getElementById("text2").style.textDecoration = "line-through";
   }
@@ -143,4 +137,5 @@ function nowChange(color){
     document.getElementById("text3").style.backgroundColor = textBackgrounds[color];
     document.getElementById("text4").style.backgroundColor = textBackgrounds[color];
   }
+  return;
 }

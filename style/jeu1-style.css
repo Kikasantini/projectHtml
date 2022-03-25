@@ -1,11 +1,7 @@
-body {
-    text-align: center;
-    background-color: #f1f1f1;
-}
+/* DEFAULT settings : Big screen (Desktop) */
 
-button {
-    background-color: #aaaaaa;
-}
+body { text-align: center; background-color: #f1f1f1;}
+button { background-color: #aaaaaa;}
 
 correct {
     color: rgb(18, 180, 18);
@@ -18,6 +14,7 @@ incorrect {
     font-size: 30px;
     font-weight: bold;
 }
+
 table {
     align-self: center;
     text-align: center;
@@ -27,19 +24,9 @@ table {
     margin-right: auto;
 }
 
-element {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-th {
-    background-color: #5fb9d9;
-    width: 100px;
-}
-
-td {
-    width: 80px;
-}
+element { font-size: 40px; font-weight: bold;}
+th { background-color: #5fb9d9; width: 100px;}
+td { width: 80px;}
 
 question {
     color: rgb(44, 25, 110);
@@ -59,13 +46,8 @@ input[type=text] {
     height: 50px;
 }
 
-.submitButton:hover {
-    background-color: #f8a2b0;
-}
-
-.submitButton:active {
-    background-color: #e59ca8;
-}
+.submitButton:hover { background-color: #f8a2b0;}
+.submitButton:active { background-color: #e59ca8;}
 
 .mainFrame {
     background-image: url('../images/bg1.jpg');
@@ -77,12 +59,6 @@ input[type=text] {
     padding-right: 10px;
     border-radius: 10px;
     border: 2px grey solid;
-}
-
-name {
-    color: rgb(71, 107, 155);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
 }
 
 number {
@@ -104,17 +80,19 @@ bad {
     font-weight: bold;
 }
 
-/* My phone screen 
-  @media (max-aspect-ratio: 20/9) {
+/* My phone screen OR small screen */
+@media (aspect-ratio: 20/9), (max-width: 500px) {
+    /* No changes on small screen */
+    .mainFrame { background-image: none; border: none; padding-top: 10px;}
+    body { background-image: url('../images/bg1.jpg');}
+    number {font-size: 40px;}
 
-  }
-
-  */
-
-
-/* Small screen */
+    element { font-size: 50px; font-weight: bold;}
+    th { background-color: #5fb9d9; width: 100px; height: 80px;}
+    td { width: 60px;}
+}
 
 /* Medium screen */
-
-
-  
+@media (min-width: 501px) and (max-width: 800px) {
+    /* No changes on medium screen */
+}

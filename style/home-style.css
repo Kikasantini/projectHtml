@@ -1,6 +1,6 @@
-body {
-    background-color: #e4d8c2;
-}
+/* DEFAULT settings : Big screen (Desktop) */
+
+body { background-color: #e4d8c2;}
 
 table {
     padding-top: 30px;
@@ -28,10 +28,7 @@ td {
     margin: auto;
 }
 
-.container {
-    position: relative;
-    width: 100%;
-}
+.container { position: relative; width: 100%;}
 
 .overlay {
     position: absolute;
@@ -46,7 +43,7 @@ td {
     background-color: #000000;
 }
 
-p{
+p {
     background-color: none;
     width: fit-content;
     margin: auto;
@@ -62,39 +59,17 @@ p{
     text-align: center;
     opacity: 0;
     z-index: 10;
-  }
-
-.bigButton:hover .overlay {
-    opacity: .5;
 }
 
-.bigButton:hover .text {
-    opacity: 1;
-}
+.bigButton:hover .overlay { opacity: .5;}
+.bigButton:hover .text { opacity: 1;}
 
-.style0button {
-    border: 3px solid white;
-}
-
-.style1button {
-    border: 3px solid black;
-}
-
-.style2button {
-    border: 5px double black;
-}
-
-.style3button {
-    border: 6px groove rgb(201, 95, 8);
-}
-
-.style4button {
-    border: 3px solid rgb(105, 0, 153);
-}
-
-.style5button {
-    border: none;
-}
+.style0button { border: 3px solid white;}
+.style1button { border: 3px solid black;}
+.style2button { border: 5px double black;}
+.style3button { border: 6px groove rgb(201, 95, 8);}
+.style4button { border: 3px solid rgb(105, 0, 153);}
+.style5button { border: none;}
 
 h1 {
     font-family: 'Segoe UI';
@@ -108,20 +83,9 @@ h2 {
     padding-bottom: 20px;
 }
 
-p {
-    font-style: italic;
-    color: #727272;
-}
-
-ul {
-    padding: 0;
-    display: flex;
-}
-
-li {
-    padding-left: 5px;
-    padding-right: 5px;
-}
+p { font-style: italic; color: #727272;}
+ul { padding: 0; display: flex;}
+li { padding-left: 5px; padding-right: 5px;}
 
 .arrow {
     border: solid rgb(221, 73, 73);
@@ -144,46 +108,18 @@ li {
     font-size: 20px;
 }
 
-.smallButton:active {
+.smallButton:active { background-color: #9c9c9c;}
 
-    background-color: #9c9c9c;
-    
+/* My phone screen OR small screen */
+@media (aspect-ratio: 20/9), (max-width: 500px) {
+    table { padding-top: 20px;}
+    h1 { font-size: 60px;}
+    h2 { font-size: 25px;}
 }
 
-/* DEFAULT : Desktop screen */
-
-
 /* Medium screen */
-@media screen and (max-width: 800px) {
+@media (min-width: 501px) and (max-width: 800px) {
     table { padding-top: 30px;}
     h1 { font-size: 80px;}
     h2 { font-size: 35px;}
 }
-
-
-/* My phone screen  AND small screen */
-@media screen and (aspect-ratio: 20/9) and (max-width: 500px) {
-    table { padding-top: 20px;}
-    h1 { font-size: 60px;}
-    h2 { font-size: 25px;}
-}
-
-
-
-
-/* My phone screen
-@media (aspect-ratio: 20/9) {
-    table { padding-top: 20px;}
-    h1 { font-size: 60px;}
-    h2 { font-size: 25px;}
-}
-
-/* Small screen
-@media screen and (max-width: 500px) {
-    table { padding-top: 20px;}
-    h1 { font-size: 60px;}
-    h2 { font-size: 25px;}
-}
- */
-
-

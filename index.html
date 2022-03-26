@@ -12,7 +12,7 @@
     <link rel="icon" type="image/x-icon" href="images/icons/home.ico">
 </head>
 <body>
-
+    <!-- MENU BAR -->
     <div class="topnav" id="myTopnav">
         <a href="" class="active">Home</a>
         <a href="pages/resume.html">Mon Resume</a>
@@ -20,11 +20,12 @@
         <a href="pages/form.html">Jeu Mad Libs</a>
         <a href="pages/gallery.html">Gallerie</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-      </div>
+    </div>
 
-      <table>
-          <tr>
-              <td>
+    <!-- 3 SQUARE BUTTONS -->
+    <table>
+        <tr>
+            <td>
                 <ul type="none">
                     <li>
                         <div class="container">
@@ -48,24 +49,23 @@
                         </div>
                     </li>
                 </ul>
-              </td>
-          </tr>
-      </table>
-      
-      <table>
-          <tr>
-              <td>
-                    <a onclick="javascript:changeText1Color();"><h1 id="text1">Bienvenue</h1></a>
-                    <a onclick="javascript:changeText2Decoration();"><h2 id="text2">Projet 2 - Programmation Web</h2></a>
-                    <a onclick="javascript:changeTextColor();"><p id="text3">Développé par Erica Santini de Lima</p>
-                    <p id="text4">23 mars 2022</p></a>
-                    <br>
-                    <button class="smallButton" onclick="javascript:text34Left();">&#8249;</button>  <button class="smallButton" onclick="javascript:text34Right();">&#8250;</button>
-              </td>
-          </tr>
-      </table>
-      
+            </td>
+        </tr>
+    </table>
 
+    <!-- 3 CLICKABLE TEXT -->
+    <table>
+        <tr>
+            <td>
+                <a onclick="javascript:changeText1Color();"><h1 id="text1">Bienvenue</h1></a>
+                <a onclick="javascript:changeText2Decoration();"><h2 id="text2">Projet 2 - Programmation Web</h2></a>
+                <a onclick="javascript:changeTextColor();"><p id="text3">Développé par Erica Santini de Lima</p><p id="text4">23 mars 2022</p></a>
+                <br>
+                <!-- LEFT AND RIGHT BUTTONS -->
+                <button class="smallButton" onclick="javascript:text34Left();">&#8249;</button>  <button class="smallButton" onclick="javascript:text34Right();">&#8250;</button>
+            </td>
+        </tr>
+    </table>
 
 </body>
 </html>

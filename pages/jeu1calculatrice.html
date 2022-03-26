@@ -13,7 +13,7 @@
     <title>La Calculatrice</title>
 </head>
 <body>
-
+    <!-- MENU BAR -->
     <div class="topnav" id="myTopnav">
         <a href="../index.html">Home</a>
         <a href="resume.html">Mon Resume</a>
@@ -21,57 +21,50 @@
         <a href="form.html">Jeu Mad Libs</a>
         <a href="gallery.html">Gallerie</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-      </div>
+    </div>
       
-      <h1>LaC<number>4</number>lculatric<blue>3</blue></h1>
+    <!-- TITLE -->
+    <h1>LaC<number>4</number>lculatric<blue>3</blue></h1>
      
-
+    <!-- BODY OF THE CALCULATOR -->
     <div class="mainFrame">
 
         <button id="ninjaMode" onclick="switchMode()" title="Activez pour faire aussi la SOUSTRACTION et la MULTIPLICATION">Ninja Mode is OFF</button>
 
-      
-      <table>
-        <tr>
-            <th>
-                <div id="firstNumberHere">
-                    <script type = "text/javascript">
-                        firstNumber();
-                    </script>
-                </div>   
-            </th>
-            <td id="operation"><element>+</element></td>
-            <th>
-                <div id="secondNumberHere">
-                    <script type = "text/javascript">
-                        secondNumber();
-                    </script>
-                </div>
-            </th>
-        </tr>
-    </table>
+        <table>
+            <tr>
+                <th>
+                    <div id="firstNumberHere">
+                        <script type = "text/javascript">firstNumber();</script>
+                    </div>   
+                </th>
+                <td id="operation"><element>+</element></td>
+                <th>
+                    <div id="secondNumberHere">
+                        <script type = "text/javascript">secondNumber();</script>
+                    </div>
+                </th>
+            </tr>
+        </table>
 
-    <question>QUEL EST LE RÉSULTAT?</question>
+        <question>QUEL EST LE RÉSULTAT?</question>
+
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <input type="text" id="answer" maxlength="5">
+                </td>
+                <td>
+                    <input type="button" class="submitButton" value="Submit" onclick="checkResult(num1, num2)" onsubmit="checkResult()">
+                </td>
+            </tr>
+        </table>
+    
+        <div id="score">Score: 0</div>
+    </div>
 
     <br>
-    <table>
-        <tr>
-            <td>
-                <input type="text" id="answer" maxlength="5">
-    
-            </td>
-            <td>
-                <input type="button" class="submitButton" value="Submit" onclick="checkResult(num1, num2)" onsubmit="checkResult()">
-            </td>
-        </tr>
-    </table>
-    
-    <div id="score">Score: 0</div>
-    
-</div>
-<br>
-<div id="theresult"></div>
-
-
+    <div id="theresult"></div>
 </body>
 </html>

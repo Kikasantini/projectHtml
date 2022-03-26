@@ -1,14 +1,10 @@
 /* DEFAULT settings : Big screen (Desktop) */
 
 body { margin: 0; font-family: 'Segoe UI';}
-
 a { text-decoration: none;}
 
-/* Add a black background color to the top navigation */
-.topnav { background-color: #333; overflow: hidden;}
-  
-/* Style the links inside the navigation bar */
-.topnav a {
+.topnav { background-color: #333; overflow: hidden;}  
+.topnav a { /* Links on Menu Bar */
   float: left;
   display: block;
   color: #f2f2f2;
@@ -17,17 +13,13 @@ a { text-decoration: none;}
   font-size: 17px;
 }
 
-/* Add an active class to highlight the current page */
 .active {
   background-color: #db5b6e;
   color: white;
   text-decoration:line-through greenyellow;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon { display: none;}
-
-/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav .icon { display: none;} /* Icon (small screen) */
 .topnav a:hover { background-color: #ff8699; color: white;}
 
 /* My phone screen */
@@ -43,18 +35,15 @@ a { text-decoration: none;}
     display: block;
     text-align: left;
   }
-
 }
 
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* All small screens < 600px */
 @media screen and (max-width: 600px) {
+  /* Hides all BUT "Home", shows icon */
   .topnav a:not(:first-child) { display: none;}
   .topnav a.icon { float: right; display: block;}
-}
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+  /* Adding the "responsive" class */
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -66,8 +55,4 @@ a { text-decoration: none;}
     display: block;
     text-align: left;
   }
-
 }
-
-
-

@@ -87,20 +87,10 @@ p { font-style: italic; color: #727272;}
 ul { padding: 0; display: flex;}
 li { padding-left: 5px; padding-right: 5px;}
 
-.arrow {
-    border: solid rgb(221, 73, 73);
-    border-width: 0 5px 5px 0;
-    display: inline-block;
-    padding: 5px;
-    top: 50%;
-    left: 50%;
-    margin-top: 3px;
-}
-
 .smallButton {
     width: 30px;
     height: 30px;
-    background-color: #d3d3d3;
+    background-color: #b1b1b1;
     border: solid grey;
     border-width: 0 2px 2px 0;
     margin: 0;
@@ -108,7 +98,8 @@ li { padding-left: 5px; padding-right: 5px;}
     font-size: 20px;
 }
 
-.smallButton:active { background-color: #9c9c9c;}
+.smallButton:hover { background-color: #ffb46d;}
+.smallButton:active { background-color: #c9925f;}
 
 /* My phone screen OR small screen */
 @media (aspect-ratio: 20/9), (max-width: 500px) {

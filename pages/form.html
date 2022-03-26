@@ -12,6 +12,7 @@
     <link rel="icon" type="image/x-icon" href="../images/icons/game2.ico">
 </head>
 <body>
+    <!-- MENU BAR -->
     <div class="topnav" id="myTopnav">
         <a href="../index.html">Home</a>
         <a href="resume.html">Mon Resume</a>
@@ -19,53 +20,37 @@
         <a href="" class="active">Jeu Mad Libs</a>
         <a href="gallery.html">Gallerie</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-      </div>
+    </div>
 
-      <table>
+    <table>
         <tr>
             <td>Completez le formulaire pour créer l'histoire!</td>
         </tr>
     </table>
     <br>
 
-      <mainFrame>
-        
-      
+    <!-- FRAME CONTAINING : Form, Image and Story -->
+    <mainFrame>
+        <form>
+            <label>Un aliment:</label><br><input type="text" id="answer1" required><br>
+            <label>Une couleur:</label><br><input type="text" id="answer2" required><br>
+            <label>Un animal grand:</label><br><input type="text" id="answer3" required><br>
+            <label>Un animal petit:</label><br><input type="text" id="answer4" required><br>
+            <label>Un sujet polémique:</label><br><input type="text" id="answer5" required><br>
+            <label>Une partie du corps humain (pluriel):</label><br><input type="text" id="answer6" required><br>
+            <label>Un verbe:</label><br><input type="text" id="answer7" required><br>
+            <label>Completez avec votre opinion:</label><br><input type="text" id="answer8" required placeholder="L'eau potable est.."><br>
+            <label>Completez avec une activité:</label><br><input type="text" id="answer9" required placeholder="Je n'aime pas trop.."><br><br>
+            <input type="button" value="Submit" onclick="getAnswers()">
+            <input type="button" value="Reset" onclick="clearAll()">
+        </form>
 
-
-    <form>
-      <label>Un aliment:</label><br><input type="text" id="answer1" required><br>
-      <label>Une couleur:</label><br><input type="text" id="answer2" required><br>
-      <label>Un animal grand:</label><br><input type="text" id="answer3" required><br>
-      <label>Un animal petit:</label><br><input type="text" id="answer4" required><br>
-      <label>Un sujet polémique:</label><br><input type="text" id="answer5" required><br>
-      <label>Une partie du corps humain (pluriel):</label><br><input type="text" id="answer6" required><br>
-      <label>Un verbe:</label><br><input type="text" id="answer7" required><br>
-      <label>Completez avec votre opinion:</label><br><input type="text" id="answer8" required placeholder="L'eau potable est.."><br>
-      <label>Completez avec une activité:</label><br><input type="text" id="answer9" required placeholder="Je n'aime pas trop.."><br>
-      <br>
-      <input type="button" value="Submit" onclick="getAnswers()">
-      <input type="button" value="Reset" onclick="clearAll()">
-
-      
-    </form>
-
-      
-      
-
-      
- 
-          <img src="../images/crow.jpg">
-          <div class="storyFrame">
-                    <div id="finalstory"></div>
-            </div>
-   
-
-
-      
-
+        <img src="../images/crow.jpg">
+        <div class="storyFrame">
+            <div id="finalstory"></div>
+        </div>
     </mainFrame>
-      <br><br>
-
+    
+    <br><br>
 </body>
 </html>
